@@ -2,7 +2,7 @@ applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: pal-tracker-distributed-backlog-camarillo apps.evans.pal.pivotal.io
+  - route: pal-tracker-distributed-backlog-camarillo.apps.evans.pal.pivotal.io
   memory: 1G
   instances: 1
   env:
