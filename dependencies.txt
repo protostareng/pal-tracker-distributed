@@ -10,3 +10,6 @@ Spring Cloud Services Tile or SCS Tile running on Evans Cloud Foundry foundation
 SCS Client Libaries version:  	spring-cloud-services-dependencies 2.0.3.RELEASE
 
 Spring Cloud version:  spring-cloud-dependencies   version: Finchley.SR3
+
+
+p-service-registry            standard
