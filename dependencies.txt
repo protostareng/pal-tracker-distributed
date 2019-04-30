@@ -1,0 +1,12 @@
+APP_DOMAIN:apps.evans.pal.pivotal.io 
+
+curl https://spring-cloud-broker.apps.evans.pal.pivotal.io/actuator/info
+
+Retruned JSON : {"git":{"commit":{"time":"2018-08-17T09:08:06Z","id":"6af8fcf"},"branch":"HEAD"},"build":{"version":"2.0.2-build.6","artifact":"spring-cloud-service-broker","name":"service-broker","group":"io.pivotal.spring.cloud","time":"2018-09-05T14:56:09.501Z"}}
+
+
+Spring Cloud Services Tile or SCS Tile running on Evans Cloud Foundry foundation version :2.0.2-build.6
+
+SCS Client Libaries version:  	spring-cloud-services-dependencies 2.0.3.RELEASE
+
+Spring Cloud version:  spring-cloud-dependencies   version: Finchley.SR3
