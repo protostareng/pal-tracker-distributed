@@ -1,0 +1,181 @@
+Getting env variables for app tracker-allocations in org peopletruthbetold.gmail.com / space sandbox as peopletruthbetold@gmail.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "p-circuit-breaker-dashboard": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "amqp": {
+      "dashboard_url": "https://pivotal-rabbitmq.sys.evans.pal.pivotal.io/#/login/48ad4d20-5f8c-494c-93e1-b88ffeb41afc/9s1r15mgqhb80akulsso0tjhhn",
+      "hostname": "10.0.8.4",
+      "hostnames": [
+       "10.0.8.4"
+      ],
+      "http_api_uri": "https://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@pivotal-rabbitmq.sys.evans.pal.pivotal.io/api/",
+      "http_api_uris": [
+       "https://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@pivotal-rabbitmq.sys.evans.pal.pivotal.io/api/"
+      ],
+      "password": "9s1r15mgqhb80akulsso0tjhhn",
+      "protocols": {
+       "amqp": {
+        "host": "10.0.8.4",
+        "hosts": [
+         "10.0.8.4"
+        ],
+        "password": "9s1r15mgqhb80akulsso0tjhhn",
+        "port": 5672,
+        "ssl": false,
+        "uri": "amqp://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@10.0.8.4:5672/5379ba7b-2ac3-4ed9-838b-684d06ecef74",
+        "uris": [
+         "amqp://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@10.0.8.4:5672/5379ba7b-2ac3-4ed9-838b-684d06ecef74"
+        ],
+        "username": "48ad4d20-5f8c-494c-93e1-b88ffeb41afc",
+        "vhost": "5379ba7b-2ac3-4ed9-838b-684d06ecef74"
+       },
+       "management": {
+        "host": "10.0.8.4",
+        "hosts": [
+         "10.0.8.4"
+        ],
+        "password": "9s1r15mgqhb80akulsso0tjhhn",
+        "path": "/api/",
+        "port": 15672,
+        "ssl": false,
+        "uri": "http://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@10.0.8.4:15672/api/",
+        "uris": [
+         "http://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@10.0.8.4:15672/api/"
+        ],
+        "username": "48ad4d20-5f8c-494c-93e1-b88ffeb41afc"
+       }
+      },
+      "ssl": false,
+      "uri": "amqp://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@10.0.8.4/5379ba7b-2ac3-4ed9-838b-684d06ecef74",
+      "uris": [
+       "amqp://48ad4d20-5f8c-494c-93e1-b88ffeb41afc:9s1r15mgqhb80akulsso0tjhhn@10.0.8.4/5379ba7b-2ac3-4ed9-838b-684d06ecef74"
+      ],
+      "username": "48ad4d20-5f8c-494c-93e1-b88ffeb41afc",
+      "vhost": "5379ba7b-2ac3-4ed9-838b-684d06ecef74"
+     },
+     "dashboard": "https://hystrix-720640b5-2326-4afb-a2fd-0f6ad5df4a6c.apps.evans.pal.pivotal.io",
+     "stream": "https://turbine-720640b5-2326-4afb-a2fd-0f6ad5df4a6c.apps.evans.pal.pivotal.io"
+    },
+    "instance_name": "tracker-circuit-breaker-dashboard",
+    "label": "p-circuit-breaker-dashboard",
+    "name": "tracker-circuit-breaker-dashboard",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "circuit-breaker",
+     "hystrix-amqp",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p-identity": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "auth_domain": "https://p-identity.login.sys.evans.pal.pivotal.io",
+     "client_id": "5a4f610c-c3c2-4a4d-b372-210ddbc68cf5",
+     "client_secret": "e1aa1130-8ed8-41a6-a54e-9ec528c093b9"
+    },
+    "instance_name": "tracker-sso",
+    "label": "p-identity",
+    "name": "tracker-sso",
+    "plan": "p-identity",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ],
+  "p-service-registry": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "access_token_uri": "https://p-spring-cloud-services.uaa.sys.evans.pal.pivotal.io/oauth/token",
+     "client_id": "p-service-registry-9693c0f4-e9df-4c67-a47b-ba6114044faa",
+     "client_secret": "LheeTEyW47JH",
+     "uri": "https://eureka-185994dc-f59c-47f2-9f10-f4275d1d24e1.apps.evans.pal.pivotal.io"
+    },
+    "instance_name": "tracker-service-registry",
+    "label": "p-service-registry",
+    "name": "tracker-service-registry",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "eureka",
+     "discovery",
+     "registry",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p.mysql": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "hostname": "q-n3s3y1.q-g52914.bosh",
+     "jdbcUrl": "jdbc:mysql://q-n3s3y1.q-g52914.bosh:3306/service_instance_db?user=14bc75b151564d45ad8cba8732d1215f\u0026password=j5g0ky6hsvc4ml3v\u0026useSSL=false",
+     "name": "service_instance_db",
+     "password": "j5g0ky6hsvc4ml3v",
+     "port": 3306,
+     "uri": "mysql://14bc75b151564d45ad8cba8732d1215f:j5g0ky6hsvc4ml3v@q-n3s3y1.q-g52914.bosh:3306/service_instance_db?reconnect=true",
+     "username": "14bc75b151564d45ad8cba8732d1215f"
+    },
+    "instance_name": "tracker-allocations-database",
+    "label": "p.mysql",
+    "name": "tracker-allocations-database",
+    "plan": "db-small",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "mysql"
+    ],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "e66466fd-f100-4e6a-a208-c0ffc7b6daae",
+  "application_name": "tracker-allocations",
+  "application_uris": [
+   "pal-tracker-distributed-allocations-camarillo.apps.evans.pal.pivotal.io"
+  ],
+  "application_version": "7057b0a9-77b1-4212-986c-dc964c2671b7",
+  "cf_api": "https://api.sys.evans.pal.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "tracker-allocations",
+  "space_id": "ac63d8a5-6d08-429a-b1dc-024844771ccb",
+  "space_name": "sandbox",
+  "uris": [
+   "pal-tracker-distributed-allocations-camarillo.apps.evans.pal.pivotal.io"
+  ],
+  "users": null,
+  "version": "7057b0a9-77b1-4212-986c-dc964c2671b7"
+ }
+}
+
+User-Provided:
+GRANT_TYPE: client_credentials
+JBP_CONFIG_OPEN_JDK_JRE: { jre: { version: 11.+ } }
+MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
+
+No running env variables have been set
+
+No staging env variables have been set
+
